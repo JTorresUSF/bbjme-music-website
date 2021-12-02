@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'LidoSTF-BoldItalic';
+  src: url('LidoSTF-BoldItalic.eot');
+  src: url('LidoSTF-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('LidoSTF-BoldItalic.svg#LidoSTF-BoldItalic') format('svg'),
+       url('LidoSTF-BoldItalic.ttf') format('truetype'),
+       url('LidoSTF-BoldItalic.woff') format('woff'),
+       url('LidoSTF-BoldItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

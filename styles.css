@@ -1,0 +1,381 @@
+@font-face {
+  font-family: "LidoSTF-BoldItalic";
+  src: url("LidoSTF-BoldItalic.eot");
+  src: url("LidoSTF-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("LidoSTF-BoldItalic.svg#LidoSTF-BoldItalic") format("svg"),
+    url("LidoSTF-BoldItalic.ttf") format("truetype"),
+    url("LidoSTF-BoldItalic.woff") format("woff"),
+    url("LidoSTF-BoldItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(media/dia\ headphones.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url(media/dia\ headphones.jpg);
+  }
+
+  .navbar .right .buttons ul li {
+    display: block;
+    /* width: 100%; */
+    padding-bottom: 30px;
+    /* float: right; */
+  }
+}
+
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+/* @media only screen and (min-width: 768px) {
+  .navbar .right .buttons ul li {
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+    float: right;
+  }
+} */
+
+.logo {
+  width: 4%;
+  position: absolute;
+  border-radius: 50%;
+  top: 15px;
+  left: 30px;
+}
+
+.title {
+  position: absolute;
+  top: 15px;
+  left: 120px;
+}
+
+.title h1 {
+  font-size: 30px;
+  color: #d54e8d;
+  font-family: "LidoSTF-BoldItalic";
+  float: left;
+}
+
+.navbar .right .buttons ul li {
+  list-style: none;
+  margin-top: 3%;
+  display: inline-block;
+}
+
+.navbar .right .buttons ul li a {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 12px;
+  right: 20px;
+  position: relative;
+  color: #cad2d8;
+  width: 125px;
+  padding: 5px;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  line-height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  .navbar .right .buttons ul li a {
+    font-size: 16px;
+  }
+
+  .icons ul li a {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+}
+
+.icons ul {
+  position: absolute;
+  top: 75px;
+  left: 280px;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.icons ul li {
+  list-style: none;
+  margin: 0 6px;
+}
+
+.icons ul li .fab {
+  font-size: 15px;
+  line-height: 30px;
+  transition: 0.6s;
+  color: #000;
+}
+
+.icons ul li .fab:hover {
+  color: #fff;
+}
+
+.icons ul li a {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icons ul li a:hover {
+  transform: translate(0, -10px);
+}
+
+.icons ul li:nth-child(1) a:hover {
+  background-color: #cd201f;
+}
+
+.icons ul li:nth-child(2) a:hover {
+  background-color: #ff3300;
+}
+
+.icons ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+
+.icons ul li:nth-child(4) a:hover {
+  background-color: #1877f2;
+}
+
+.icons ul li:nth-child(5) a:hover {
+  background-color: #6441a4;
+}
+
+.icons ul li:nth-child(6) a:hover {
+  background-color: #1da1f2;
+}
+
+.icons ul li:nth-child(7) a:hover {
+  background-color: #ee1d51;
+}
+
+.icons ul li:nth-child(8) a:hover {
+  background-color: #49f4a8;
+}
+
+/* .content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+} */
+
+/* .left {
+  margin-left: 30%;
+}
+
+.left h1 {
+  font-size: 90px;
+  color: #fff;
+  line-height: 110px;
+  float: left;
+} */
+
+.about-container {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.about-content-section {
+  float: right;
+  width: 55%;
+}
+
+.about-image-section {
+  float: left;
+  width: 40%;
+}
+
+.about-image-section img {
+  width: 50%;
+  margin-left: 40%;
+  height: auto;
+  margin-top: 29%;
+  border-radius: 5px;
+}
+
+.about-title {
+  font-size: 22px;
+  margin-top: 13%;
+  color: #cfc493;
+}
+
+.about-content p {
+  margin-top: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  color: #fff;
+}
+
+.contact {
+  position: static;
+  min-height: 70vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #cfc493;
+  font-family: "LidoSTF-BoldItalic";
+}
+
+.contact .content p {
+  font-weight: 300;
+  color: #cfc493;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contactForm {
+    width: 100%;
+  }
+}
+
+.inconvenience {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: static;
+  display: flex;
+}
+
+.inconvenience h2 {
+  font-size: 40px;
+  color: #cfc493;
+}

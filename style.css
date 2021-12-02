@@ -1,0 +1,412 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(media/dia\ headphones.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar */
+
+.nav {
+  color: #cfc493;
+  height: 100px;
+  width: 100%;
+}
+
+.nav .container {
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.nav .flex {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+label.logo {
+  color: #cfc493;
+  font-size: 35px;
+  line-height: 60px;
+  padding: 0 5px;
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
+  float: left;
+  top: 20px;
+  margin-bottom: 30px;
+}
+
+.nav ul.sections {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.nav ul.sections li {
+  line-height: 20px;
+}
+
+.nav ul.sections a {
+  color: #cfc493;
+  padding: 10px;
+  margin: 0 5px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav ul.icons {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul.icons li {
+  line-height: 80px;
+}
+
+.nav ul.icons li a {
+  color: #cfc493;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+/* .checkbtn {
+  font-size: 30px;
+  color: #cfc493;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+} */
+
+/* About */
+
+.about-container {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.about-content-section {
+  float: right;
+  width: 55%;
+}
+
+.about-content-section a {
+  color: #fff;
+}
+
+.about-image-section {
+  float: left;
+  width: 40%;
+}
+
+.about-image-section img {
+  width: 300px;
+  margin-left: 5%;
+  height: auto;
+  margin-top: 3%;
+  border-radius: 5px;
+}
+
+.about-title {
+  font-size: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 2%;
+  color: #cfc493;
+}
+
+.about-content p {
+  margin-top: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+
+/* Utilities */
+
+.vidwrapper {
+  width: 100%;
+  max-width: 800px;
+  /* margin: 3em auto; */
+  display: block;
+  margin: auto;
+}
+
+.vidwrapper h1 {
+  color: #cfc493;
+  font-family: "Nunito Sans", sans-serif;
+  position: absolute;
+  top: 190px;
+  font-size: 24px;
+}
+
+.vidcontainer {
+  width: 100%;
+  max-width: 100%;
+  height: 0;
+  /* 720 / 1280 */
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.vidcontainer iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+
+/* Contact Form */
+
+.contact-container {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.contact-form-section {
+  float: right;
+  width: 45%;
+  margin-top: 10%;
+}
+
+.contact-text-section {
+  float: left;
+  width: 40%;
+  font-family: "Nunito Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text-section h1 {
+  width: 100%;
+  margin-left: 40%;
+  height: auto;
+  margin-top: 25%;
+  font-size: 40px;
+  color: #cfc493;
+}
+
+.contact-text-section p {
+  width: 100%;
+  margin-left: 40%;
+  height: auto;
+  color: #cfc493;
+}
+
+.inputBox {
+  margin-bottom: 30px;
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 10px 0;
+  outline: 0;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-size: 15px;
+}
+
+/*.inputBox label {*/
+/*  height: 100%;*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  top: 0;*/
+/*  padding: 10px;*/
+/*  color: #fff;*/
+/*  cursor: text;*/
+/*  transition: 0.2s;*/
+/*}*/
+
+button {
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+  width: 100%;
+}
+
+/*input:focus ~ label,*/
+/*input:valid ~ label,*/
+/*textarea:focus ~ label,*/
+/*textarea:valid ~ label {*/
+/*  top: -35px;*/
+/*  font-size: 14px;*/
+/*}*/
+
+/* Responsive UI Design */
+
+@media (max-width: 1375px) {
+  label.logo {
+    font-size: 30px;
+  }
+  .nav ul li a {
+    font-size: 16px;
+    padding: 1px;
+  }
+  .about-content {
+    font-size: 20px;
+    width: 100%;
+    display: block;
+  }
+  .contact-text-section {
+    width: 30%;
+    height: auto;
+    margin-top: 2%;
+  }
+}
+
+@media (max-width: 958px) {
+  .about-section {
+    margin-top: 50px;
+  }
+  .about-image-section {
+    margin-left: -20px;
+  }
+  .about-image-section img {
+    height: auto;
+    width: 80%;
+    padding-left: 10px;
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 805px) {
+  label.logo {
+    font-size: 25px;
+  }
+  .icons {
+    position: fixed;
+    text-align: center;
+  }
+  .nav ul.sections a {
+    font-size: 14px;
+    padding: 1px;
+    margin: 0 1px;
+  }
+}
+
+/*@media (max-width: 550px) {*/
+/*  label.logo {*/
+/*    font-size: 18px;*/
+/*  }*/
+/*  .nav ul.sections a {*/
+/*    font-size: 13px;*/
+/*    padding: 1px;*/
+/*    margin: 0 1px;*/
+/*  }*/
+/*}*/
+
+@media (max-width: 530px) {
+  label.logo {
+    font-size: 18px;
+  }
+  .nav ul.sections a {
+    font-size: 13px;
+    padding: 1px;
+    margin: 0 1px;
+  }
+  .vidwrapper h1 {
+    top: 180px;
+    font-size: 25px;
+  }
+  .contact-text-section {
+    width: 15%;
+    height: auto;
+    margin-top: 5%;
+  }
+  .contact-text-section h1 {
+    font-size: 25px;
+  }
+  .contact-text-section p {
+    font-size: 15px;
+  }
+  .contact-form-section {
+    width: 60%;
+    margin-right: -30px;
+  }
+}
+
+@media (max-width: 451px) {
+  .nav .container {
+    padding: 0 5px;
+  }
+  .nav ul.sections {
+    padding: 4px;
+  }
+  .nav ul.sections a {
+    font-size: 12px;
+  }
+  label.logo {
+    font-size: 16px;
+  }
+  /*input:focus ~ label,*/
+  /*input:valid ~ label,*/
+  /*textarea:focus ~ label,*/
+  /*textarea:valid ~ label {*/
+  /*  top: -35px;*/
+  /*  font-size: 11px;*/
+  /*}*/
+}
+
+@media (max-width: 399px) {
+  .contact-section {
+    margin-top: 6px;
+  }
+  .nav ul.sections {
+    position: fixed;
+    right: 1px;
+  }
+  .nav ul.sections a {
+    font-size: 10px;
+  }
+}
+
+/*@media (max-width: 356px) {*/
+/*.nav ul.sections {*/
+/*  position: fixed;*/
+/*  right: 1px;*/
+/*}*/
+/*.nav ul.sections a {*/
+/*  font-size: 11px;*/
+/*}*/
+/*}*/
